@@ -1,4 +1,4 @@
-- # Midi-to-Singing-Voice-Conversion(Working In Process)
+- # Midi-to-Singing-Voice-Conversion
 
 
 Vocal Synthesis Through MIDI and Vocal Transformation Using RVC: Exploration of Innovative Music Processing Methodologies
