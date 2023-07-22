@@ -10,6 +10,7 @@ Vocal Synthesis Through MIDI and Vocal Transformation Using RVC: Exploration of 
 - [Installation](#installation)
 - [Prepare_Datasets](#prepare_datasets)
 - [Usage](#usage)
+- [To-do](#to-do)
 - [References](#references)
 
 ## Structure
@@ -124,6 +125,12 @@ To start this tool, use the following command, replacing your respective values 
 ```sh
 python main.py {model_name} {text_file} {midi_file} {language} {gender} {bpm}
 ```
+
+---
+
+## To-do
+
+- Automatic pitch analyzer (UVR -> VOCAL (INST REMOVED) -> RMVPE -> MIDI) -> Work In Process
 
 ---
 
