@@ -62,7 +62,7 @@ git clone https://github.com/ORI-Muchim/Midi-to-Singing-Voice-Conversion.git
 cd Midi-to-Singing-Voice-Conversion
 ```
 
-5. **Extract the [RVC.zip]() file and move the folder to this directory.**
+5. **Extract the [RVC.zip](https://drive.google.com/file/d/1GLrGqm05OagxFsuwNPTfa0WlgT55gofb/view?usp=sharing) file and move the folder to this directory.**
 
 6. **Install the necessary dependencies:**
 
