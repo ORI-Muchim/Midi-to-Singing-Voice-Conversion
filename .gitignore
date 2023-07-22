@@ -1,0 +1,7 @@
+RVC/
+**/*.pyc
+**/__pycache__
+**/*.xml
+build
+dist
+midi2voice.egg-info
