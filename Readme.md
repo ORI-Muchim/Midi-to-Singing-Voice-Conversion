@@ -1,4 +1,4 @@
-- # Midi-to-Singing-Voice-Conversion
+- # Midi-to-Singing-Voice-Conversion(M2SVC)
 
 
 Vocal Synthesis Through MIDI and Vocal Transformation Using RVC: Exploration of Innovative Music Processing Methodologies
