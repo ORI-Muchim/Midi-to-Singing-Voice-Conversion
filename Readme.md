@@ -1,4 +1,4 @@
-- # Midi-to-Singing-Voice-Conversion
+- # Midi-to-Singing-Voice-Conversion(Working In Process)
 
 
 Vocal Synthesis Through MIDI and Vocal Transformation Using RVC: Exploration of Innovative Music Processing Methodologies
@@ -29,13 +29,11 @@ Pytorch install command:
 pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
 ```
 
-CUDA 11.7 Install:
-`https://developer.nvidia.com/cuda-11-7-0-download-archive`
+[CUDA 11.7 install](https://developer.nvidia.com/cuda-11-7-0-download-archive)
 
-Musescore 3 insall:
-`https://ftp.osuosl.org/pub/musescore-nightlies/windows/3x/stable/`
+[Musescore 3 install](https://ftp.osuosl.org/pub/musescore-nightlies/windows/3x/stable/)
 
-Musescore 3 must be set as an environment variable.
+**Musescore 3 must be set as an environment variable.**
 
 ---
 
@@ -132,6 +130,7 @@ python main.py {model_name} {text_file} {midi_file} {language} {gender} {bpm}
 ## References
 
 For more information, please refer to the following repositories: 
+- [mathigatti/midi2voice](https://github.com/mathigatti/midi2voice)
 - [RVC-Project/Retrieval-based-Voice-Conversion-WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)
 - [Kyubyong/g2pK](https://github.com/Kyubyong/g2pK)
 - [kdrkdrkdr/ko2kana](https://github.com/kdrkdrkdr/ko2kana)
