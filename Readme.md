@@ -130,7 +130,7 @@ python main.py {model_name} {text_file} {midi_file} {language} {gender} {bpm}
 
 ## To-do
 
-- Automatic Pitch Analyzer (UVR -> VOCAL (INST REMOVED) -> RMVPE -> MIDI) -> Work In Process
+- Automatic Pitch Analyzer (UVR -> VOCAL (INST REMOVED) -> RMVPE -> MIDI) / Work In Process!
 
 ---
 
