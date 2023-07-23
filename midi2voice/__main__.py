@@ -29,7 +29,7 @@ ap.add_argument("-d", "--destination_folder", required=False, default='.',
 args = vars(ap.parse_args())
 
 with open(args['lyrics'], 'r', encoding='utf-8') as text_file:
-    lyrics = ' '.join([line.strip() for line in text_file.readlines()])
+    lyrics = ''.join([line.strip() for line in text_file.readlines()]).replace(' ', '')
  
 midi_path = args['midi']
  
