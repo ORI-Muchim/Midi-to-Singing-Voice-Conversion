@@ -1,4 +1,5 @@
 import argparse
+from .lyrics_tokenizer import tokenize
 from langdetect import detect
 
 from . import renderize_voice
@@ -27,8 +28,10 @@ ap.add_argument("-d", "--destination_folder", required=False, default='.',
    help="Destination folder")
 args = vars(ap.parse_args())
 
-with open(args['lyrics'], 'r', encoding='utf-8') as text:
-	lyrics = text.readlines()
+with open(args['lyrics'], 'r', encoding='utf-8') as text_file:
+    lyrics = ' '.join([line.strip() for line in text_file.readlines()])
+ 
+midi_path = args['midi']
  
 detect(str(lyrics))
  
