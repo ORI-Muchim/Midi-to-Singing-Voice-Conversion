@@ -139,6 +139,7 @@ python main.py {model_name} {text_file} {midi_file} {language} {gender} {bpm}
 
 For more information, please refer to the following repositories: 
 - [mathigatti/midi2voice](https://github.com/mathigatti/midi2voice)
+- [CjangCjengh/vits](https://github.com/CjangCjengh/vits)
 - [RVC-Project/Retrieval-based-Voice-Conversion-WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)
 - [Kyubyong/g2pK](https://github.com/Kyubyong/g2pK)
 - [kdrkdrkdr/ko2kana](https://github.com/kdrkdrkdr/ko2kana)
