@@ -588,7 +588,8 @@ def korean2katakana(text):
         
     kr2ro = japanese_to_romaji_with_accent(kr).replace('si', 'shi').replace('c', 'ts') \
                                               .replace('ti', 'ティ').replace('tu', 'トゥ') \
-                                              .replace('di', 'ディ').replace('du', 'ドゥ')
+                                              .replace('di', 'ディ').replace('du', 'ドゥ') \
+                                              .replace('wa', 'ワ')
     result = jaconv.alphabet2kata(kr2ro)
     result = result.replace('/', '').replace('|', 'ー').replace('^', '')
     return result
