@@ -7,10 +7,15 @@ import sys
 from unidecode import unidecode
 from xml.etree.ElementTree import ElementTree, Element, SubElement
 from ko2kana import korean2katakana
+from kanji2hira import japanese_cleaners2
 from .lyrics_tokenizer import tokenize
 
 def process_text(text):
     text = korean2katakana(text) # or replace it with the appropriate function
+    return text
+
+def process_text2(text):
+    text = japanese_cleaners2(text)
     return text
 
 def midi2xml(lyrics, midi_path, xml_path, tempo=80, lang="english"):
@@ -53,6 +58,8 @@ def add_voice_tags(tempo, text, content, lang):
                 next_part = text[i % len(text)]
                 if lang == "korean":
                     next_part = process_text(next_part)
+                elif lang == "japanese":
+                    next_part  = process_text2(next_part)
                 if next_part.endswith("-"):
                     next_part = next_part[:-1]
                     if prev_beginning:

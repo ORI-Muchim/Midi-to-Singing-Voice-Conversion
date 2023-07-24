@@ -56,10 +56,9 @@ httpx==0.23.0
 #onnxruntime-gpu
 torchcrepe==0.0.20
 fastapi==0.88
-selenium
 pyautogui
 opencv-python
-easyocr
 pillow==9.5.0
 colorednoise
 mido
+pyopenjtalk
