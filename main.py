@@ -12,7 +12,7 @@ bpm = sys.argv[6]
 
 subprocess.run(["python", "-m", "midi2voice", "-l", text_file, "-m", midi_file, "--lang", lang, "-g", gender, "-t", bpm])
 
-#os.chdir('./RVC')
-#oneclick = subprocess.run(["python", "oneclickprocess.py", "--name", model_name])
+os.chdir('./RVC')
+oneclick = subprocess.run(["python", "oneclickprocess.py", "--name", model_name])
 
-#print("All processes have finished.")
+print("All processes have finished.")
