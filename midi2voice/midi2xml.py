@@ -20,11 +20,17 @@ def process_text2(text):
     return text
 
 def midi2xml(lyrics, midi_path, xml_path, tempo=80, lang="english"):
-    lyrics = process_text2(lyrics)
     temp_xml = "temp.xml"
     create_music_xml(midi_path, temp_xml)
-    if lang in ["mandarin", "japanese", "korean"]:
+    if lang in ["mandarin"]:
         lyrics = ''.join(lyrics).encode('utf-8').decode('utf-8').replace(' ', '')  # convert list of strings to a single string
+        lyrics = list(lyrics)
+    elif lang in ["japanese"]:
+        lyrics = process_text2(lyrics)
+        lyrics = ''.join(lyrics).encode('utf-8').decode('utf-8').replace(' ', '')
+        lyrics = list(lyrics)
+    elif lang in ["korean"]:
+        lyrics = ''.join(lyrics).encode('utf-8').decode('utf-8').replace(' ', '')
         lyrics = list(lyrics)
     else:
         lyrics = tokenize(lyrics, midi_path)
