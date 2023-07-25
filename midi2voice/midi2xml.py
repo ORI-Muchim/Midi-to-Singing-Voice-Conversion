@@ -7,7 +7,7 @@ import sys
 from unidecode import unidecode
 from xml.etree.ElementTree import ElementTree, Element, SubElement
 from ko2kana import korean2katakana
-from kanji2hira import japanese_cleaners2
+from kanji2hira import japanese2korean
 from .lyrics_tokenizer import tokenize
 
 def process_text(text):
@@ -15,10 +15,12 @@ def process_text(text):
     return text
 
 def process_text2(text):
-    text = japanese_cleaners2(text)
+    text = japanese2korean(text)
+    text = korean2katakana(text)
     return text
 
 def midi2xml(lyrics, midi_path, xml_path, tempo=80, lang="english"):
+    lyrics = process_text2(lyrics)
     temp_xml = "temp.xml"
     create_music_xml(midi_path, temp_xml)
     if lang in ["mandarin", "japanese", "korean"]:
