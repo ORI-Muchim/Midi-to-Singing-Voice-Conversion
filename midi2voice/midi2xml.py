@@ -7,7 +7,7 @@ import sys
 from unidecode import unidecode
 from xml.etree.ElementTree import ElementTree, Element, SubElement
 from ko2kana import korean2katakana
-from kanji2hira import japanese2korean
+from kanji2kana import japanese2korean
 from .lyrics_tokenizer import tokenize
 
 def process_text(text):
