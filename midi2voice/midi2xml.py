@@ -11,7 +11,7 @@ from kanji2kana import japanese2korean
 from .lyrics_tokenizer import tokenize
 
 def process_text(text):
-    text = korean2katakana(text) # or replace it with the appropriate function
+    text = korean2katakana(text)
     return text
 
 def process_text2(text):
