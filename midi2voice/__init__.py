@@ -31,7 +31,7 @@ def renderize_voice(lyrics, midi_path, tempo=80, lang="english", gender="female"
 
 def voice_code(lang="english", gender="female", index=0):
 	if lang == "mandarin" and gender == "male":
-		raise Exception("No male voices available for mandarin :(")
+		raise Exception("No male voices available for mandarin.")
 	options = voices_ids[lang][gender]
 	return options[index]
 
@@ -51,7 +51,7 @@ def sinsy_request(xml_file_path, wav_path, lang="english", gender="female", voic
 
 
     if url_file_name is None:
-        raise Exception("No wav file found on sinsy.jp.")
+        raise Exception("No wav file found on sinsy.jp. Try again!")
     else:
         download_with_progress(url_file_name, wav_path)
         print("Voice Synthesis completed.")
