@@ -51,7 +51,7 @@ def sinsy_request(xml_file_path, wav_path, lang="english", gender="female", voic
 
 
     if url_file_name is None:
-        raise Exception("No wav file found on sinsy.jp :( Try again or create an issue at https://github.com/mathigatti/midi2voice/issues if the problem persists.")
+        raise Exception("No wav file found on sinsy.jp.")
     else:
         download_with_progress(url_file_name, wav_path)
         print("Voice Synthesis completed.")
