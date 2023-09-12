@@ -49,12 +49,6 @@ python -m midi2voice -l shallow.txt -m shallow.mid
 python -m midi2voice -l shallow.txt -m shallow.mid -lang english -g female -t 96
 ```
 
-### Try it on Colab
-
-If you don't have python installed or you just want to check it quickly you can try it online [here](https://colab.research.google.com/drive/1_lZiwQfuHIVaEFmAibPKUMprZ_0yU35L?usp=sharing).
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1_lZiwQfuHIVaEFmAibPKUMprZ_0yU35L?usp=sharing)
-
 ## Voices available
 
 At the moment [sinsy.jp](http://sinsy.jp/) provides this voices. You can use the VOICEINDEX parameter to choose them.
@@ -107,5 +101,3 @@ This source code was developed by Mathias Gatti ([@mathigatti](https://mathigatt
 
 If you want to help me to keep going developing and maintaining open-source projects you can contribute buying me some [ko-fi](https://ko-fi.com/mathigatti).
 
-## License
-MIT
